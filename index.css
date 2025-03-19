@@ -238,7 +238,61 @@ body {
 #footer {
     background: url('images/DALL·E\ 2025-03-18\ 16.28.47\ -\ A\ luxurious\ and\ creative\ background\ featuring\ elegant\ textures\,\ soft\ golden\ hues\,\ and\ subtle\ fabric\ patterns.\ The\ design\ is\ perfect\ for\ enhancing\ a\ fa.webp') no-repeat center center;
     background-size: cover;
-    padding: 24px;
+    padding: 24px 40px;
     grid-area: footer;
+    display: flex;
+    justify-content: space-between; /* Distributes content evenly */
+    align-items: center;
+    color: #222222;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 600; /* Increased boldness */
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Footer Sections */
+.footer-left, .footer-center, .footer-right {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Social Links */
+.footer-center {
     text-align: center;
 }
+
+.footer-center a {
+    color: #D4AF37; /* Muted Gold */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    display: inline-block;
+    margin: 5px;
+}
+
+.footer-center a:hover {
+    color: #C0A080; /* Soft Champagne */
+    text-decoration: underline;
+}
+
+/* Icons Styling */
+.footer-left i, .footer-right i {
+    color: #A8A8A8; /* Elegant Silver */
+    margin-right: 8px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #footer {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .footer-left, .footer-center, .footer-right {
+        align-items: center;
+    }
+}
+
+
