@@ -37,8 +37,8 @@ body {
 
 /* Sticky Topbar */
 #topbar {
-    background-color: lightseagreen;
-    padding: 24px;
+    background: url('images/DALL·E\ 2025-03-18\ 16.28.47\ -\ A\ luxurious\ and\ creative\ background\ featuring\ elegant\ textures\,\ soft\ golden\ hues\,\ and\ subtle\ fabric\ patterns.\ The\ design\ is\ perfect\ for\ enhancing\ a\ fa.webp') no-repeat center center;
+    background-size: cover;    padding: 24px;
     border-bottom: 1px solid #ccc;
     position: sticky;
     top: 0;
@@ -70,14 +70,16 @@ body {
     margin-right: 48px;
 }
 
-/* Sidebar */
 #sidebar {
     background-color: lightcoral;
     padding: 24px;
     grid-area: sidebar;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px; /* Adds space between links and the paragraph */
 }
 
-/* Navigation Links in Sidebar */
 .nav-links {
     width: 100%;
     display: flex;
@@ -101,27 +103,141 @@ body {
 }
 
 .nav-links a:hover {
-    background: slategray
+    background: #ed9659;
 }
 
+.nav-links p {
+    margin-top: 20px; /* Adds space between the last link and the paragraph */
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.2); /* Light background for better readability */
+    border-radius: 5px;
+    font-size: 14px;
+    color: white;
+    text-align: left;
+}
 /* Main Content */
 #main {
-    background-color: lightblue;
-    padding: 24px;
-    height: 460px;
+    background-image: 
+                    url('images/men-fashion.jpg'),   /* Left Image */
+                    url('images/workspace.jpg'), /* Center Image */
+                    url('images/boutique.jpg');    /* Right Image */
+
+    background-position: 
+                        bottom left, 
+                        50%,  /* Move center image up slightly */
+                        bottom right;
+
+    background-repeat: no-repeat, no-repeat, no-repeat;
+
+    background-size: 
+                    30% auto,   /* Left Image */
+                    35% auto,   /* Center Image (reduce slightly) */
+                    30% auto;   /* Right Image */
+
+    background-color: #C8E6C9; /* Mint green */
+    border: 2px solid red;
     grid-area: main;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* Ensures heading stays at the top */
 }
 
-/* Right Section */
+/* Heading Styling */
+#main h1 {
+    background-color: rgba(0, 51, 102, 0.9); /* Deep Blue with transparency */
+    color: #FFFFFF; /* White text */
+    padding: 10px 20px;
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    margin-bottom: 3px; /* Space between heading and content */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Paragraph Styling */
+#main p {
+    font-size: 18px;
+    color: #003366; /* Deep Blue */
+    text-align: justify;
+    line-height: 1.8;
+    max-width: 90%;
+    /* padding: 5px; */
+    margin-bottom: 3px;
+    background: rgba(255, 255, 255, 0.8);
+    border-left: 4px solid #D4AF37; /* Gold Accent */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+/* Aside Section */
 #aside {
-    background-color: bisque;
-    padding: 24px;
-    grid-area: aside;
+    background-color: #F8F9FA; /* Soft light background */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Heading */
+#aside h2 {
+    font-size: 24px;
+    color: #003366; /* Deep Blue */
+    font-weight: bold;
+    text-align: center;
+    border-bottom: 3px solid #003366;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+/* Testimonial List */
+.testimonial-list {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+
+.testimonial-list li {
+    font-size: 16px;
+    color: #444;
+    background: url('images/bullet\ icon.png') no-repeat left center;
+    background-size: 20px;
+    padding-left: 30px;
+    margin-bottom: 10px;
+}
+
+/* Feedback Buttons */
+.feedback-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.feedback-btn {
+    background-color: #007BFF; /* Bright Blue */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.feedback-btn:hover {
+    background-color: #0056b3; /* Darker Blue */
 }
 
 /* Footer */
 #footer {
-    background-color: lightseagreen;
+    background: url('images/DALL·E\ 2025-03-18\ 16.28.47\ -\ A\ luxurious\ and\ creative\ background\ featuring\ elegant\ textures\,\ soft\ golden\ hues\,\ and\ subtle\ fabric\ patterns.\ The\ design\ is\ perfect\ for\ enhancing\ a\ fa.webp') no-repeat center center;
+    background-size: cover;
     padding: 24px;
     grid-area: footer;
     text-align: center;
