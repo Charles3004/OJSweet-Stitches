@@ -60,14 +60,65 @@ body {
 }
 
 /* Logo */
-#logo {
-    color: rgb(83, 16, 53);
-    font-size: 35px;
-    letter-spacing: -1px;
+/* Topbar Styling */
+#topbar {
+    background: url('images/DALL·E\ 2025-03-18\ 16.28.47\ -\ A\ luxurious\ and\ creative\ background\ featuring\ elegant\ textures\,\ soft\ golden\ hues\,\ and\ subtle\ fabric\ patterns.\ The\ design\ is\ perfect\ for\ enhancing\ a\ fa.webp') no-repeat center center;
+    background-size: cover;
+    padding: 20px 40px;
+    /* border-bottom: 2px solid rgba(255, 215, 0, 0.7); Subtle gold accent */
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+/* Left Menu (Logo & Name) */
+#left-menu {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+#logo-img {
+    height: 90px;  /* Premium size */
+    width: auto;
+    display: block;
+    border-radius: 5px; /* Soft edges */
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+/* Company Name Styling */
+#company-name {
+    font-size: 32px;
     font-weight: 900;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin: 0;
-    margin-right: 48px;
+    color: #4b004b; /* Rich elegant shade */
+    font-family: "Playfair Display", serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Navigation Menu */
+#nav-menu {
+    display: flex;
+    gap: 30px;
+}
+
+.menu {
+    font-size: 20px;
+    font-weight: bold;
+    color: #B8860B; /* Golden shade for luxury */
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+}
+
+.menu:hover {
+    color: #FFD700; /* Lighter gold on hover */
+    text-decoration: underline;
 }
 
 #sidebar {
